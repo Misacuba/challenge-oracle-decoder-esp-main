@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>código secreto</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+  <header>
+    
+    <img class="loguito" src="imagenes/Logo.png" alt="logo Alura">
+    
+  </header>
+  
+  <main class="principal">
+    <div class="contenedor-principal">
+      <section class="form-box">
+        
+        <form id ="formulario" class ="formulario"  action="">
+          
+          <div class="contenedor-texto">
+            <label for="input-texto">Solo letras minúsculas, sin acento</label>
+            <textarea class="text-input" name="input-texto" id="input-texto" cols="" rows="" placeholder="Ingrese el texto aqui" required ></textarea>
+          </div>
+
+          <div class="botones">
+            <input class="btn" type="button" value="Encriptar!" id="btn-encriptar" onclick="encriptar();">
+            <input class="btn" type="button" value="Desencriptar!" id="btn-desencriptar" onclick="decriptar();">
+          </div>
+        </form>
+      </section>
+    
+      <section class="msg-box">
+        <img src="imagenes/Muñeco.png" class="muneco" alt="imagen escaneo">
+        <h2 id="">mensaje encriptada :</h2>
+        <textarea class="text-input" name="text-input" id="msg" cols="" rows=""></textarea>
+        
+        <input class="btn" type="button" value="Copiar" id="btn-copy"   onclick="copiar('msg');">
+      
+      </section>
+    </div>
+  </main>
+
+
+      <footer id="s-page-footer" class="wrapper-page ">
+        <a href="https://app.aluracursos.com/dashboard" class="footer-logo">
+          <img class="header-logo header-logo-aluraespanhol" src="imagenes/logo-aluraespanhol.svg" alt="Logo da aluraespanhol">
+        </a>
+        <section>
+        <div class=" wrapper-xl">
+              <div class="rui-footer--icons w-100">
+                <ul class="rui-footer--contact">
+                        <li>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.2502 19.25H8.75C7.64543 19.25 6.75 18.3546 6.75 17.25V6.75C6.75 5.64543 7.64543 4.75 8.75 4.75H15.2502C16.3548 4.75 17.2502 5.64543 17.2502 6.75V17.25C17.2502 18.3546 16.3548 19.25 15.2502 19.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M11.75 16.75H12.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="ml-1">mobile : +51 990428881</span>
+                        </li>
+                        <li>
+                            <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.75 7.75C4.75 6.64543 5.64543 5.75 6.75 5.75H17.25C18.3546 5.75 19.25 6.64543 19.25 7.75V16.25C19.25 17.3546 18.3546 18.25 17.25 18.25H6.75C5.64543 18.25 4.75 17.3546 4.75 16.25V7.75Z"></path>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.5 6.5L12 12.25L18.5 6.5"></path>
+                            </svg>
+                            <a class="ml-1" href="mailto:cuba.misael@zoho.com">cuba.misael@zoho.com</a>
+                        </li>
+                </ul>
+              </div>
+    
+              <div class="rui-footer--box w-100 ">
+                    <ul class="rui-footer--social ">
+                            <li>
+                                <a href="https://www.linkedin.com/in/misacuba/" target="_blank" class="linkedin">
+                                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                        <path d="M19.039,19.043H16.078V14.4c0-1.106-.023-2.53-1.544-2.53-1.544,0-1.78,1.2-1.78,2.449v4.722H9.792V9.5h2.845v1.3h.039a3.12,3.12,0,0,1,2.808-1.542c3,0,3.556,1.975,3.556,4.546v5.238ZM6.447,8.194A1.72,1.72,0,1,1,8.168,6.473,1.719,1.719,0,0,1,6.447,8.194ZM7.932,19.043H4.963V9.5H7.932ZM20.521,2H3.476A1.458,1.458,0,0,0,2,3.441V20.559A1.458,1.458,0,0,0,3.476,22H20.518A1.463,1.463,0,0,0,22,20.559V3.441A1.464,1.464,0,0,0,20.518,2Z" fill="currentColor"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            
+                            <li>
+                              <a href="https://github.com/Misacuba" target="_blank" class="github">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.164 6.839 9.49.5.094.682-.217.682-.482 0-.237-.008-.866-.012-1.7-2.782.604-3.365-1.344-3.365-1.344-.455-1.16-1.114-1.469-.876-1.175.063-.086.533.043 1.016.399.589.479 1.267 1.096 1.267 1.096 1.163 1.39 3.046.987 3.797.75.118-.84.45-1.404.818-1.727-2.862-.327-5.86-1.431-5.86-6.386 0-1.412.505-2.566 1.338-3.47-.135-.328-.579-1.64.127-3.415 0 0 1.083-.347 3.546 1.32 1.027-.287 2.125-.431 3.219-.435 1.094.004 2.192.148 3.219.435 2.461-1.667 3.544-1.32 3.544-1.32.707 1.776.262 3.088.129 3.415.8.904 1.335 2.058 1.335 3.47 0 4.966-2.999 6.057-5.87 6.377.461.4.876 1.186.876 2.393 0 1.728-.016 3.121-.016 3.548 0 .267.18.579.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" fill="currentColor"/>
+                                </svg>
+                              </a>
+                            </li>
+                      </ul>
+              </div>
+    
+              <div class="rui-footer-copy rui-footer-content">
+                <p><strong>Copyright © 2024 Alura Oracle Qv@. All right reserved.</strong></p>
+              </div>
+    
+        </div>
+      </section>
+    </footer>
+
+
+
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM1P5V55CsLk/ATQ4n1YDeF1stSDh7wtJEU1PsqR+5HpD" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6SpejhvnvqXq6RsAU9hkVoNS5T2n3DBuqA5qd4+vlITe09V8fcWJ4LSneU80C" crossorigin="anonymous"></script>
+  
+
+</body>
+</html>
